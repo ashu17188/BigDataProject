@@ -2,8 +2,6 @@ package org.ashu.spark
 
 import org.apache.spark.sql.SparkSession
 
-
-
 object SqlDatabaseConnect {
   def main(args: Array[String]) {
     val sc = SparkSession
@@ -27,6 +25,9 @@ object SqlDatabaseConnect {
     countsByAge.show()
 
     // Saves countsByAge to S3 in the JSON format.
-    countsByAge.write.format("json").save("s3a://...")
+    countsByAge.write.format("json").save("/home/hduser/BigData_Workspace/BigDataProject/resources/databaseConnect.json");
+
+    val showAllPeople = df.select("id","age","name");
+    showAllPeople.show();
   }
 }
