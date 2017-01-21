@@ -1,0 +1,95 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/01/21 13:17:03 INFO SparkContext: Running Spark version 2.1.0
+17/01/21 13:17:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/01/21 13:17:06 WARN Utils: Your hostname, ashutosh-Inspiron-3551 resolves to a loopback address: 127.0.1.1; using 192.168.43.194 instead (on interface wlan0)
+17/01/21 13:17:06 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/01/21 13:17:06 INFO SecurityManager: Changing view acls to: hduser
+17/01/21 13:17:06 INFO SecurityManager: Changing modify acls to: hduser
+17/01/21 13:17:06 INFO SecurityManager: Changing view acls groups to: 
+17/01/21 13:17:06 INFO SecurityManager: Changing modify acls groups to: 
+17/01/21 13:17:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hduser); groups with view permissions: Set(); users  with modify permissions: Set(hduser); groups with modify permissions: Set()
+17/01/21 13:17:07 INFO Utils: Successfully started service 'sparkDriver' on port 47612.
+17/01/21 13:17:07 INFO SparkEnv: Registering MapOutputTracker
+17/01/21 13:17:08 INFO SparkEnv: Registering BlockManagerMaster
+17/01/21 13:17:08 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/01/21 13:17:08 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/01/21 13:17:08 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-25ea0a4c-3c4c-4d20-a832-048c558d3a26
+17/01/21 13:17:08 INFO MemoryStore: MemoryStore started with capacity 332.1 MB
+17/01/21 13:17:08 INFO SparkEnv: Registering OutputCommitCoordinator
+17/01/21 13:17:09 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+17/01/21 13:17:09 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+17/01/21 13:17:09 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.43.194:4041
+17/01/21 13:17:10 INFO Executor: Starting executor ID driver on host localhost
+17/01/21 13:17:10 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50628.
+17/01/21 13:17:10 INFO NettyBlockTransferService: Server created on 192.168.43.194:50628
+17/01/21 13:17:10 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/01/21 13:17:10 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.43.194, 50628, None)
+17/01/21 13:17:10 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.43.194:50628 with 332.1 MB RAM, BlockManagerId(driver, 192.168.43.194, 50628, None)
+17/01/21 13:17:10 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.43.194, 50628, None)
+17/01/21 13:17:10 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.43.194, 50628, None)
+17/01/21 13:17:11 INFO SharedState: Warehouse path is 'file:/home/hduser/BigData_Workspace/BigDataProject/spark-warehouse/'.
+17/01/21 13:17:13 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 236.5 KB, free 331.9 MB)
+17/01/21 13:17:14 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 331.8 MB)
+17/01/21 13:17:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.43.194:50628 (size: 22.9 KB, free: 332.1 MB)
+17/01/21 13:17:14 INFO SparkContext: Created broadcast 0 from textFile at WordCount.scala:21
+17/01/21 13:17:14 INFO FileInputFormat: Total input paths to process : 1
+17/01/21 13:17:15 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+17/01/21 13:17:15 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+17/01/21 13:17:15 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+17/01/21 13:17:15 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+17/01/21 13:17:15 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+17/01/21 13:17:15 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/01/21 13:17:15 INFO SparkContext: Starting job: saveAsTextFile at WordCount.scala:27
+17/01/21 13:17:16 INFO DAGScheduler: Registering RDD 3 (map at WordCount.scala:25)
+17/01/21 13:17:16 INFO DAGScheduler: Got job 0 (saveAsTextFile at WordCount.scala:27) with 1 output partitions
+17/01/21 13:17:16 INFO DAGScheduler: Final stage: ResultStage 1 (saveAsTextFile at WordCount.scala:27)
+17/01/21 13:17:16 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+17/01/21 13:17:16 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+17/01/21 13:17:16 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at map at WordCount.scala:25), which has no missing parents
+17/01/21 13:17:17 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.8 KB, free 331.8 MB)
+17/01/21 13:17:17 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.8 KB, free 331.8 MB)
+17/01/21 13:17:17 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.43.194:50628 (size: 2.8 KB, free: 332.1 MB)
+17/01/21 13:17:17 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:996
+17/01/21 13:17:17 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at map at WordCount.scala:25)
+17/01/21 13:17:17 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+17/01/21 13:17:17 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 6014 bytes)
+17/01/21 13:17:17 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+17/01/21 13:17:17 INFO HadoopRDD: Input split: file:/home/hduser/BigData_Workspace/BigDataProject/resources/input.txt:0+109
+17/01/21 13:17:18 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1746 bytes result sent to driver
+17/01/21 13:17:18 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1388 ms on localhost (executor driver) (1/1)
+17/01/21 13:17:18 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/01/21 13:17:18 INFO DAGScheduler: ShuffleMapStage 0 (map at WordCount.scala:25) finished in 1.527 s
+17/01/21 13:17:18 INFO DAGScheduler: looking for newly runnable stages
+17/01/21 13:17:18 INFO DAGScheduler: running: Set()
+17/01/21 13:17:18 INFO DAGScheduler: waiting: Set(ResultStage 1)
+17/01/21 13:17:18 INFO DAGScheduler: failed: Set()
+17/01/21 13:17:18 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at saveAsTextFile at WordCount.scala:27), which has no missing parents
+17/01/21 13:17:18 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 72.9 KB, free 331.8 MB)
+17/01/21 13:17:18 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 26.4 KB, free 331.7 MB)
+17/01/21 13:17:18 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.43.194:50628 (size: 26.4 KB, free: 332.0 MB)
+17/01/21 13:17:18 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:996
+17/01/21 13:17:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at saveAsTextFile at WordCount.scala:27)
+17/01/21 13:17:18 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+17/01/21 13:17:18 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, ANY, 5757 bytes)
+17/01/21 13:17:18 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+17/01/21 13:17:19 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+17/01/21 13:17:19 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 39 ms
+17/01/21 13:17:19 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.168.43.194:50628 in memory (size: 2.8 KB, free: 332.1 MB)
+17/01/21 13:17:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/01/21 13:17:19 INFO FileOutputCommitter: Saved output of task 'attempt_20170121131715_0001_m_000000_1' to file:/home/hduser/BigData_Workspace/BigDataProject/resources/output.txt/_temporary/0/task_20170121131715_0001_m_000000
+17/01/21 13:17:19 INFO SparkHadoopMapRedUtil: attempt_20170121131715_0001_m_000000_1: Committed
+17/01/21 13:17:19 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2050 bytes result sent to driver
+17/01/21 13:17:19 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 977 ms on localhost (executor driver) (1/1)
+17/01/21 13:17:19 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+17/01/21 13:17:19 INFO DAGScheduler: ResultStage 1 (saveAsTextFile at WordCount.scala:27) finished in 0.976 s
+17/01/21 13:17:20 INFO DAGScheduler: Job 0 finished: saveAsTextFile at WordCount.scala:27, took 4.207056 s
+17/01/21 13:17:20 INFO SparkContext: Invoking stop() from shutdown hook
+17/01/21 13:17:20 INFO SparkUI: Stopped Spark web UI at http://192.168.43.194:4041
+17/01/21 13:17:20 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/01/21 13:17:20 INFO MemoryStore: MemoryStore cleared
+17/01/21 13:17:20 INFO BlockManager: BlockManager stopped
+17/01/21 13:17:20 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/01/21 13:17:20 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/01/21 13:17:20 INFO SparkContext: Successfully stopped SparkContext
+17/01/21 13:17:20 INFO ShutdownHookManager: Shutdown hook called
+17/01/21 13:17:20 INFO ShutdownHookManager: Deleting directory /tmp/spark-ad066914-3a36-4f8b-a03c-c2e044854056
