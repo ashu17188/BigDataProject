@@ -212,5 +212,9 @@
 	<classpathentry kind="lib" path="lib/xz-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/zookeeper-3.4.6.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-client-9.4.3.v20170317.jar" sourcepath="lib/jetty-client-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="lib/kafka-connect-jdbc-3.3.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.8.7.jar"/>
+	<classpathentry kind="lib" path="lib/play-json_2.11-2.5.13.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
