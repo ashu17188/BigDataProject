@@ -216,5 +216,12 @@
 	<classpathentry kind="lib" path="lib/kafka-connect-jdbc-3.3.0-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/jackson-databind-2.8.7.jar"/>
 	<classpathentry kind="lib" path="lib/play-json_2.11-2.5.13.jar"/>
+	<classpathentry kind="lib" path="lib/spark-cassandra-connector_2.11-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/spark-examples_2.11-1.6.0-typesafe-001.jar" sourcepath="lib/spark-examples_2.11-1.6.0-typesafe-001.jar"/>
+	<classpathentry kind="lib" path="lib/spark-cassandra-connector-embedded_2.11-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jsr166e-1.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/elephant-bird-core-4.15.jar"/>
+	<classpathentry kind="lib" path="lib/spark-streaming-flume_2.11-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/spark-streaming-kafka_2.11-1.6.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
