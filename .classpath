@@ -223,5 +223,10 @@
 	<classpathentry kind="lib" path="lib/elephant-bird-core-4.15.jar"/>
 	<classpathentry kind="lib" path="lib/spark-streaming-flume_2.11-2.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/spark-streaming-kafka_2.11-1.6.3.jar"/>
+	<classpathentry kind="lib" path="lib/kafka_2.11-0.10.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/kafka-clients-0.10.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/elephant-bird-hadoop-compat-4.15.jar"/>
+	<classpathentry kind="lib" path="lib/ashulog.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
